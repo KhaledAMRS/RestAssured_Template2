@@ -21,4 +21,15 @@ public class RandomDataGenerator {
 
     }
 
+        public static String getRandomDataForEmail()
+    {
+        return faker.internet().safeEmailAddress();
+    }
+
+    public static String getRandomDataForPhoneNumber()
+    {
+        return String.valueOf(faker.number().digits(8));
+    }
+
+    
 }
